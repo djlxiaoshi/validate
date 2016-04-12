@@ -17,6 +17,22 @@
 			}
 		})(jQuery);
 		var form=$("form").formValidate();
+		
+		
+		function Test(){
+			
+		}
+		
+		Test.prototype=function(){
+			function demo(){
+				alert("1");
+			}
+			
+			return demo();
+		}
+		
+		var test =new Test();
+		test.demo();
 		</script>
 	</body>
 </html>
